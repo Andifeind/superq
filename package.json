@@ -1,11 +1,16 @@
 {
   "name": "superq",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Queuing system",
   "license": "MIT",
   "keywords": [
     "q",
-    "queue"
+    "queue",
+    "async",
+    "sync",
+    "series",
+    "task",
+    "tasks"
   ],
   "main": "superq.js",
   "author": {
