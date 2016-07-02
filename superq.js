@@ -91,15 +91,21 @@ class Queue {
           return resolve();
         }
 
-        let promise = fn(item, next);
-        if (promise && typeof promise.then === 'function' && typeof promise.catch === 'function') {
-          promise.then(next).catch(err => {
+        let returnValue;
+        try {
+          returnValue = fn(item, next);
+        } catch(err) {
+          return reject(err);
+        }
+
+        if (returnValue && typeof returnValue.then === 'function' && typeof returnValue.catch === 'function') {
+          returnValue.then(next).catch(err => {
             reject(err);
           });
         }
       };
 
-      next();
+      process.nextTick(next);
     });
   }
 }
