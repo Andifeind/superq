@@ -1,0 +1,29 @@
+{
+  "name": "superq",
+  "version": "0.0.0",
+  "description": "Queuing system",
+  "license": "MIT",
+  "keywords": [
+    "q",
+    "queue"
+  ],
+  "main": "superq.js",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha tests/ --recursive"
+  },
+  "homepage": "https://github.com//superq-superq",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//superq-superq.git"
+  },
+  "bugs": {
+    "url": "https://github.com//superq-superq/issues"
+  }
+}
