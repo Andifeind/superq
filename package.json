@@ -26,12 +26,12 @@
   "scripts": {
     "test": "mocha tests/ --recursive"
   },
-  "homepage": "https://github.com//superq-superq",
+  "homepage": "https://github.com/andifeind/superq",
   "repository": {
     "type": "git",
-    "url": "https://github.com//superq-superq.git"
+    "url": "https://github.com/andifeind/superq.git"
   },
   "bugs": {
-    "url": "https://github.com//superq-superq/issues"
+    "url": "https://github.com/andifeind/superq/issues"
   }
 }
