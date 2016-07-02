@@ -1,3 +1,9 @@
+/**
+ * SuperQ - th queuing system for Node.JS
+ *
+ * @copyright (c) 2016 by Andi Heinkelein
+ * @author Andi Heinkelein <andifeind@noname-media.com>
+ */
 'use strict';
 
 class Queue {
@@ -64,6 +70,17 @@ class Queue {
     }
 
     return this.items.pop();
+  }
+
+  /**
+   * Clears the queue
+   * @return {Array} Returns all queued items
+   */
+  clear() {
+    let items = this.items;
+    this.items = [];
+
+    return items;
   }
 
   run(fn) {
