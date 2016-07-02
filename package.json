@@ -5,7 +5,12 @@
   "license": "MIT",
   "keywords": [
     "q",
-    "queue"
+    "queue",
+    "async",
+    "sync",
+    "series",
+    "task",
+    "tasks"
   ],
   "main": "superq.js",
   "author": {
